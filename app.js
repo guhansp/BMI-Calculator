@@ -6,7 +6,7 @@ function Calculate ()
     var c = document.getElementById("Weight").value
 
     var bmi = (c/(b*b))*10000
-    document.getElementById("cbmi").innerHTML=bmi;
+    document.getElementById("cbmi").innerHTML=bmi
     if (bmi<18.5)
     {
         document.getElementById("resultt").innerHTML="Underweight"
@@ -17,17 +17,17 @@ function Calculate ()
 
 
     }
-    else if(bmi>25 && bmi < 30)
+    else if(bmi>26 && bmi < 30)
     {
         document.getElementById("resultt").innerHTML="Overweight"
 
     }
-    else if(bmi>30 && bmi<35)
+    else if(bmi>31 && bmi<35)
     {
         document.getElementById("resultt").innerHTML="Obesity class 1"
 
     }
-    else if(bmi>35 && bmi<40)
+    else if(bmi>32 && bmi<40)
     {
         document.getElementById("resultt").innerHTML="Obesity Class 2"
 
@@ -42,8 +42,11 @@ function Calculate ()
     
 }
 
-function Reset()
+function Resetb()
 {
-    document.getElementById("form").Reset();
-    
+    document.getElementById('Age').value='';
+    document.getElementById('Height').value='';
+    document.getElementById('Weight').value='';
 }
+
+
